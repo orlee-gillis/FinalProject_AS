@@ -1,0 +1,21 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+// p{
+// 	margin: 0;
+// }
+// body{
+// 	background: url(../img/bg-dark.jpg);
+// 	background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     transition: all 1s ease-in-out;
+//     transition-duration: 1s;
+// }
+//<><><><><><><><><> .hero <><><><><><><><><>

@@ -1,0 +1,35 @@
+{
+  "name": "finalproject_adultswim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melbandit/FinalProject_AS.git"
+  },
+  "author": "Melissa Sattler <melissa.i.sattler@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melbandit/FinalProject_AS/issues"
+  },
+  "homepage": "https://github.com/melbandit/FinalProject_AS#readme",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "breakpoint": "^0.1.6",
+    "breakpoint-sass": "^2.7.0",
+    "browser-sync": "^2.14.3",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "susy": "^2.2.12"
+  },
+  "devDependencies": {
+    "susy": "^2.2.12"
+  }
+}

@@ -1,0 +1,98 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/Graphik/Graphik-Thin.otf) format('opentype'); /* IE no comprende format()! */
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/Graphik/Graphik-Extralight.otf) format('opentype'); /* IE no comprende format()! */
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/Graphik/Graphik-Light.otf) format('opentype'); /* IE no comprende format()! */
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/Graphik/Graphik-Regular.otf) format('opentype'); /* IE no comprende format()! */
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/Graphik/Graphik-Medium.otf) format('opentype'); /* IE no comprende format()! */
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/Graphik/Graphik-Semibold.otf) format('opentype'); /* IE no comprende format()! */
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/Graphik/Graphik-Bold.otf) format('opentype'); /* IE no comprende format()! */
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/Graphik/Graphik-Black.otf) format('opentype'); /* IE no comprende format()! */
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/Graphik/Graphik-Super.otf) format('opentype'); /* IE no comprende format()! */
+    font-weight: 900;
+}
+
+body, 
+html{
+	font-family: 'Graphik', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+	color: #000;
+}
+
+// h1{
+// 	font-family: Lobster;
+// 	font-size: 80px; //80px/16 5em
+// 	text-shadow: 1px 2px 0px rgba(255,255,255,0.5);
+// 	color: white;
+// }
+// h2{
+// 	font-family: 'Holtwood One SC';
+// 	font-size: 40px; //40px/16 2.5em
+// 	color: white;
+// }
+// h3{
+// 	font-family: 'Holtwood One SC';
+// 	font-size: 30px; //30px/16 1.875em
+// 	color: white;	
+// }
+// .store-item__desc{
+// 	color: black;
+// }
+// .location{
+// 	font-size: 20px;
+// }
+
+//><><><><><>< #menu ><><><><><><><
+// .drink-name{
+// 	font-family: Helvetica, Arial, sans-serif;
+// 	font-size: 21px;//21px/16 1.3125em
+// }
+// .drink-name--description{ //small
+// 	font-size: 14px;//14px/16 0.875em
+// 	color: $description-font-color;
+// }
+//><><><><><>< footer ><><><><><><><
+// footer{
+// 	.logo{
+// 		font-family: Lobster;
+// 		font-size: 45px;
+// 		text-shadow: 1px 2px 0px rgba(255,255,255,0.5);
+// 	}
+// }
+

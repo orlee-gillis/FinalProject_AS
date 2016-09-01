@@ -1,0 +1,29 @@
+.col-xs-12{
+	padding: 0;
+}
+
+.carousel__item{    
+     height: 360px;
+     //background-color: $carousel-bkg-color;
+     background: $carousel-bkg-color url(../img/exterior.jpg) center no-repeat;
+     border-top: 1px solid $carousel-border-top;
+     border-bottom: 1px solid $carousel-border-btm;
+     // @include bp-sm {
+     //   background: $carousel-bkg-color url(../img/coffee-1.jpg) center no-repeat;
+     // }
+}
+
+.carousel-inner{
+	border-top: 1px solid $carousel-border-top;
+ 	border-bottom: 1px solid $carousel-border-btm;
+ 	background-color: $carousel-bkg-color;
+	.item{
+		height: 360px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
