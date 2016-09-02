@@ -5,8 +5,9 @@
  */
 
 // Core variables and mixins
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "bootstrap_overrides";
+@import "bootstrap_variables";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
 // Reset and dependencies
@@ -18,14 +19,14 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code";
-//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
-//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
 // Components
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";
