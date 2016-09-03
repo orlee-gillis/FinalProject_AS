@@ -1,6 +1,24 @@
-@import "helpers/mixins";
-@import "helpers/variables";
+header {
+    height: 100px;
+    background: #000;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.header__logo{
+	padding-top: 30px;
+}
+.header__logo--sm{
+	display: block;
+	height: 40px;
+	@include bp-lg{
+		display: none;
+	}
+}
+.header__logo--lg{
+    display: none;
+    @include bp-lg{
+    	display: block;
+    	height: 40px;
+    }
 
-// h1{
-// 	padding-bottom: 30px;
-// }
+}

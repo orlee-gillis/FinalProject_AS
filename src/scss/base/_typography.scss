@@ -51,10 +51,22 @@ html{
 	font-size: 1.2em;
 	color: #000;
 }
+ul{
+    list-style: none;
+}
 .btn-default {
     font-size: 1.2em;
     font-weight: 700;
     font-family: 'Graphik', Helvetica, Arial, sans-serif;
+}
+.navigation{
+    font-size: 1.2em;
+    font-weight: 900;
+    .nav-item{
+        color: #FFF;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
 }
 
 // h1{

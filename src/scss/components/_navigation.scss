@@ -1,2 +1,45 @@
 @import "helpers/mixins";
-@import "helpers/variables";
+// @import "helpers/variables";
+.navigation{
+	padding-left: 417px;
+    margin-top: -98px;
+
+    .nav-item{
+    	float: left;
+    	margin: 0 0 0 20px;
+    	border-top: 30px solid #FFF;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #menu{
+    	float: right;
+    }
+    .hidden-lg{
+    	display: block;
+    	@include bp-md{
+    		display: none;
+    	}
+    }
+    .visible-lg{
+    	display: none;
+    	@include bp-md{
+    		display: block;
+    	}
+    }
+}
+
+.cross{
+	background:none;
+	position:absolute;
+	top:0px;
+	right:0;
+	padding:0px 15px 0px 15px;
+	color:#fff;
+	border:0;
+	font-size:3em;
+	line-height:65px;
+	font-weight:bold;
+	cursor:pointer;
+	outline:none;
+	z-index:100;
+}

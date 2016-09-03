@@ -1,0 +1,60 @@
+// ////  GRID
+
+// .page {
+//     @include full;
+// }
+
+// .header__logo {
+//     @include container;
+// }
+// .navigation {
+//     @include container;
+// }
+
+// .container {
+//     clear: both;
+//     .one {
+//         @include span(12 center);
+//     }
+//     .two {
+//         @include span(last 8  nest);
+//         div:nth-child(4n+1) {
+//             clear: both;
+//             @include span(2 at 1 of 8);
+//         }
+//         div:nth-child(4n+2) {
+//             @include span(2 at 3 of 8);
+//         }
+//         div:nth-child(4n+3) {
+//             @include span(2 at 5 of 8);
+//         }
+//         div:nth-child(4n) {
+//             @include span(last 2 of 8);
+//         }
+//         div:nth-child(4) {
+//             @include span(last 2 of 8);
+//         }
+//     }
+// }
+
+// // .content {
+// //     div {
+// //         @include gallery(4);
+// //     }
+// // }
+
+
+// // .flex-box {
+// //   img {
+    
+// //     @include gallery(4 of 8);
+    
+// //     @include breakpoint($breakpoint-sm) {
+// //       @include gallery(2 of 8);
+// //     }
+    
+// //     @include breakpoint($breakpoint-md) {
+// //       @include gallery(4 of 8);
+// //     }
+// //   }
+// // }

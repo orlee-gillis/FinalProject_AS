@@ -1,3 +1,5 @@
+@import "helpers/variables";
+
 .col-xs-12{
 	padding: 0;
 }
@@ -5,7 +7,7 @@
 .carousel__item{    
      height: 360px;
      //background-color: $carousel-bkg-color;
-     background: $carousel-bkg-color url(../img/exterior.jpg) center no-repeat;
+    // background: $carousel-bkg-color url(../img/exterior.jpg) center no-repeat;
      border-top: 1px solid $carousel-border-top;
      border-bottom: 1px solid $carousel-border-btm;
      // @include bp-sm {

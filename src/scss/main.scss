@@ -7,9 +7,6 @@ $susy: (
 @import '../../node_modules/breakpoint-sass/stylesheets/breakpoint';
 
 @import 'base/bootstrap_custom';
-@import 'base/bootstrap_mixins';
-@import 'base/bootstrap_overrides';
-@import 'base/bootstrap_variables';
 @import 'base/typography';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
@@ -20,7 +17,10 @@ $susy: (
 @import 'helpers/variables';
 
 @import 'layout/footer';
+@import 'layout/grid';
 @import 'layout/header';
+@import 'layout/layout';
+@import 'layout/sidebar';
 
 @import 'pages/home';
 @import 'pages/example';
