@@ -1,11 +1,10 @@
 @import "helpers/variables";
 
-.col-xs-12{
-	padding: 0;
+.carousel{
+    margin-bottom: 20px;
 }
-
 .carousel__item{    
-     height: 360px;
+     height: auto;
      //background-color: $carousel-bkg-color;
     // background: $carousel-bkg-color url(../img/exterior.jpg) center no-repeat;
      border-top: 1px solid $carousel-border-top;
@@ -16,16 +15,16 @@
 }
 
 .carousel-inner{
-	border-top: 1px solid $carousel-border-top;
- 	border-bottom: 1px solid $carousel-border-btm;
- 	background-color: $carousel-bkg-color;
+	//border-top: 1px solid $carousel-border-top;
+ 	//border-bottom: 1px solid $carousel-border-btm;
+ 	//background-color: $carousel-bkg-color;
 	.item{
-		height: 360px;
+		height: auto;
 		left: 50%;
 		transform: translateX(-50%);
 	}
 }
 
 .carousel-indicators {
-    bottom: -40px;
+    bottom: -15px;
 }

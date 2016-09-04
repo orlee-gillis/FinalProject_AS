@@ -1,0 +1,27 @@
+.dropdown--md{
+    display: none;
+    text-align: right;
+    padding-right: 10px;
+    @include bp-md{
+        display: block;
+    }
+    .dropdown-menu--md{
+        text-align: right;
+        li{
+            padding: 7px 0;
+            a{  
+                color: #000;
+                text-decoration: none;
+            }&:hover{
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.dropdown{
+    display: block;
+    @include bp-md{
+        display: none;
+    }
+}

@@ -1,124 +1,3 @@
-@import '../../node_modules/susy/sass/susy';
-
-$susy: (
-    flow: ltr, // ltr | rtl
-    output: float, // float | isolate
-    math: fluid, // fluid | static (requires column-width)
-    column-width: 50px, // false | value
-    container: auto, // length or % | auto
-    container-position: center, // left | center | right | <length> [*2] (grid padding)
-    last-flow: to,
-    columns: 12,
-    gutters: 1,
-    gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
-    global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
-    // use-custom: (
-    //     background-image: false,
-    //     background-options: false,
-    //     box-sizing: true,
-    //     clearfix: true,
-    //     rem: true,
-    // )
-);
-
-
-// .hero {
-//     height: 100px;
-//     margin-bottom: 10px;
-//     h3, h2 {
-//         margin: 10px;
-//     }
-//     .one {
-//         background: url(../img/box_factory-7bcdffc0.gif);
-//         height: 100%;
-//     }
-//     .two {
-//         height: 100%;
-//         div {
-//             height: 100%;
-//            // background: #CCC136;
-//         }
-//     }
-// }
-
-// .content {
-//     h3 {
-//         margin: 10px;
-//     }
-//     div {
-//         height: 20px;
-//         margin-top: 10px;
-//         margin-bottom: 10px;
-//     }
-//     div:nth-child(3n) {
-//        // background: #2F94B2;
-//     }
-//     div:nth-child(3n+1) {
-//         //background: #FF7311;
-//     }
-//     div:nth-child(3n+2) {
-//        // background: url(../img/shows-gif/Morty.gif);
-//         background-position: center;
-//     }
-// }
-////  GRID
-
-.page {
-    @include full;
-    margin-top: 0;
-}
-
-.header__logo {
-    @include container;
-}
-.navigation {
-    @include container;
-}
-.sidebar{
-    @include container;
-   // padding: 9px 44px;
-    width: 313px;
-    .dropdown{
-        width: 278px;
-    }
-}
-.content{
-    @include container;
-}
-
-// .container {
-//     clear: both;
-//     .one {
-//         @include span(12 center);
-//     }
-//     .two {
-//         @include span(last 8  nest);
-//         div:nth-child(4n+1) {
-//             clear: both;
-//             @include span(2 at 1 of 8);
-//         }
-//         div:nth-child(4n+2) {
-//             @include span(2 at 3 of 8);
-//         }
-//         div:nth-child(4n+3) {
-//             @include span(2 at 5 of 8);
-//         }
-//         div:nth-child(4n) {
-//             @include span(last 2 of 8);
-//         }
-//         div:nth-child(4) {
-//             @include span(last 2 of 8);
-//         }
-//     }
-// }
-
-// .content {
-//     div {
-//         @include gallery(4);
-//     }
-// }
-
-
 .flex-box {
 
     // @include span(12);
@@ -155,22 +34,23 @@ $susy: (
   ////one idea
     display: -webkit-flex;
     display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    // -webkit-align-items: space-between;
+    // align-items: space-between;
+    // -webkit-justify-content: center;
+    // justify-content: center;
     /* You can set flex-wrap and flex-direction individually */
     -webkit-flex-direction: column;
     flex-direction: column;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     /* Or do it all in one line with flex flow */
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+    -webkit-flex-flow: wrap;
+    flex-flow: wrap;
     /* tweak the where items line up on the row */
     /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
     -webkit-align-content: flex-start;
     align-content: flex-start;
+
    //another one
    // flex-direction: column;
    // flex-wrap: wrap;
@@ -180,10 +60,10 @@ $susy: (
 }
 
 .flex-box > img {
-  // width: 50px;
-  // height: 50px;
-  // margin: 20px;
+  //object-fit: contain;
+  //flex-shrink: 0;
   width: 50%; 
+  //height: 50%;
   padding: 5px;
   flex: 2;
   // border: 1px solid black;
