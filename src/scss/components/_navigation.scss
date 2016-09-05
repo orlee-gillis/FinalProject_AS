@@ -2,6 +2,7 @@
 // @import "helpers/variables";
 .navigation{
 	// padding-left: 417px;
+    padding-left: 36%;
     margin-top: -98px;
 
     .nav-item{
@@ -26,10 +27,15 @@
     		display: block;
     	}
     }
+    .nav-item--highlight{
+        border-top: 30px solid #468234;
+        color: #4634c3;
+    }
 }
 
 .cross{
-	background:none;
+    margin-top: 15px;
+	background: none;
 	position:absolute;
 	top:0px;
 	right:0;

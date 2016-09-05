@@ -9,7 +9,11 @@
     // @include breakpoint($breakpoint-md) {
     //   @include gallery(4 of 8);
     // }
-
+    // height: 1500px; //other way
+    // width: 100%; //other way
+    // @include breakpoint-md{
+    //     height: 1000px; //other way
+    // }
 }
 
 .flex-box {
@@ -44,12 +48,12 @@
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     /* Or do it all in one line with flex flow */
-    -webkit-flex-flow: wrap;
-    flex-flow: wrap;
+    -webkit-flex-flow: wrap;//other img layout turn off
+    flex-flow: wrap;//other img layout turn off
     /* tweak the where items line up on the row */
     /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
-    -webkit-align-content: flex-start;
-    align-content: flex-start;
+    -webkit-align-content: space-around;
+    align-content: space-around;
 
    //another one
    // flex-direction: column;
