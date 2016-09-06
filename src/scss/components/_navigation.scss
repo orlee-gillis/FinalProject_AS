@@ -1,51 +1,127 @@
 @import "helpers/mixins";
 // @import "helpers/variables";
 .navigation{
-	// padding-left: 417px;
-    padding-left: 36%;
+    // padding-left: 417px;
+    //padding-left: 36%;
     margin-top: -98px;
 
-    .nav-item{
-    	float: left;
-    	margin: 0 0 0 20px;
-    	border-top: 30px solid #FFF;
-        text-transform: uppercase;
-        text-decoration: none;
+    .menu-hamburger{
+        position: absolute;
+        //background-color: rgba(0,0,0,0.9);
+        right: 0px;
+        z-index: 50;
+        //width: 300px;
+        //height: 330px;
+        @include bp-md{
+            display: none;
+        }
+        .nav-item{
+        	float: left;
+        	//margin: 0 0 0 20px;
+            margin: 0 20px 10px 50px;
+        	border-top: 30px solid #FFF;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        #menu{
+        	float: right;
+        }
+        .nav-item-login{
+            float: left;
+            margin: 0 0 0 50px;
+            color: #000;
+            background-color: #FFF;
+            padding: 4px;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover{
+                color: #FFF;
+                background-color: #000  ;
+            }
+        }
+        // .hidden-lg{
+        // 	display: block;
+        // 	@include bp-md{
+        // 		display: none;
+        // 	}
+        // }
+        // .visible-lg{
+        // 	display: none;
+        // 	@include bp-md{
+        // 		display: block;
+        // 	}
+        // }
+        .nav-item--highlight{
+            border-top: 30px solid #468234;
+            color: #4634c3;
+        }
     }
-    #menu{
-    	float: right;
-    }
-    .hidden-lg{
-    	display: block;
-    	@include bp-md{
-    		display: none;
-    	}
-    }
-    .visible-lg{
-    	display: none;
-    	@include bp-md{
-    		display: block;
-    	}
-    }
-    .nav-item--highlight{
-        border-top: 30px solid #468234;
-        color: #4634c3;
-    }
-}
+    .menu-md{
+        display: none;
+        @include bp-md{
+            display: block;
+        }
+        .nav-item{
+            float: right;
+            margin: 0 0 0 20px;
+            border-top: 30px solid #FFF;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        // .nav-item-login{
+        //     float: left;
+        //     margin: 0 0 0 80px;
+        //     color: #000;
+        //     background-color: #FFF;
+        //     padding: 4px;
+        //     text-transform: uppercase;
+        //     text-decoration: none;
+        //     &:hover{
+        //         color: #FFF;
+        //         background-color: #000  ;
+        //     }
+        // }
+        .visible-lg{
 
-.cross{
-    margin-top: 15px;
-	background: none;
-	position:absolute;
-	top:0px;
-	right:0;
-	padding:0px 15px 0px 15px;
-	color:#fff;
-	border:0;
-	font-size:3em;
-	line-height:65px;
-	font-weight:bold;
-	cursor:pointer;
-	outline:none;
-	z-index:100;
+        }
+        .nav-item--highlight{
+            border-top: 30px solid #468234;
+            color: #4634c3;
+        }
+    }
 }
+.cross-bkg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    width: 280px;
+    height: 330px;
+    z-index: 20;
+    display: block;
+     @include bp-md{
+        display: none;
+    }
+}
+    .cross{
+        //margin-top: 15px;
+        background: none;
+    	// width: 300px;
+     //    height: 330px;
+    	position:absolute;
+    	top: 5px;
+    	right: 0;
+    	//padding:0px 15px 0px 15px;
+    	color:#fff;
+    	border:0;
+    	font-size:3em;
+    	//line-height:65px;
+    	font-weight:bold;
+    	cursor:pointer;
+    	outline:none;
+    	z-index:100;
+        display: block;
+         @include bp-md{
+            display: none;
+        }
+    }

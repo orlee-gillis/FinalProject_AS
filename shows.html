@@ -15,15 +15,24 @@
 		<div class="header__logo">
 			<img class="header__logo--sm" src="assets/img/as-logo-sm.png">
 			<img class="header__logo--lg" src="assets/img/as-logo.png">
+			<div class="cross-bkg"></div>	
 			<button class="cross">&#735;</button>
 		</div>
+		
 		<nav class="header navigation">
-			<ul>
-				<li><a href="#menu" class="nav-item hidden-lg" id="menu">Menu</li>
-				<li><a href="shows.html" class="nav-item nav-item--highlight visible-lg">Shows</a></li> 
-				<li><a href="" class="nav-item visible-lg" >Games</a></li>
+			<ul class="menu-hamburger">
+				<li><a href="#menu" class="nav-item" id="menu">Menu</li>
+				<li><a href="shows.html" class="nav-item nav-item--highlight closed">Shows</a></li> 
+				<li><a href="" class="nav-item closed" >Games</a></li>
+				<li><a href="" class="nav-item closed">Schedule</a></li>
+				<li><a href="" class="nav-item-login closed">Login</a></li>
+			</ul>
+
+			<ul class="menu-md">
+				<li><a href="" class="nav-item nav-item-login visible-lg">Login</a></li>
 				<li><a href="" class="nav-item visible-lg">Schedule</a></li>
-				<li><a href="" class="nav-item login visible-lg">Login</a></li>
+				<li><a href="" class="nav-item visible-lg" >Games</a></li>
+				<li><a href="shows.html" class="nav-item nav-item--highlight visible-lg">Shows</a></li> 
 			</ul>
 		</nav><!-- END of .nav -->
 	</header><!--End of Navigation and Header-->
