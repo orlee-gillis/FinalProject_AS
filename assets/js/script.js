@@ -12,7 +12,7 @@ $( "#menu" ).click(function() {
 });
 
 $( ".cross" ).click(function() {
-	$( "#menu" ).slideToggle( "fast", function() {
+	$( "#menu" ).slideToggle( "slow", function() {
 		$( ".cross-bkg" ).hide();
 		$( ".cross" ).hide();
 		$( "#menu" ).show();

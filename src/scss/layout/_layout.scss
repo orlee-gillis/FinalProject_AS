@@ -1,74 +1,87 @@
-.flex-box {
-
+.more-like-so{
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+.photo-gallery {
+    //height: 200px;
+    width: 100%;
+    column-count: 2;
+    -webkit-column-count: 2;
+    column-gap: 0;
+    -webkit-column-gap: 0;
+    //height: 1500px;
     // @include span(12);
     
-    // @include breakpoint($breakpoint-sm) {
-    //   @include gallery(2 of 8);
-    // }
-    
-    // @include breakpoint($breakpoint-md) {
-    //   @include gallery(4 of 8);
-    // }
-    // height: 1500px; //other way
-    // width: 100%; //other way
-    // @include breakpoint-md{
-    //     height: 1000px; //other way
-    // }
+    @include breakpoint($breakpoint-sm) {
+        column-count: 3;
+        -webkit-column-count: 3;    
+    }
+
+    @include breakpoint($breakpoint-md) {
+        column-count: 4;
+        -webkit-column-count: 4;    
+    }
+    .photo-gallery__link {
+        // column-count: 2;
+        @include span(8 of 8);
+
+        -webkit-column-break-inside: avoid;
+        column-break-inside: avoid;
+        padding: 5px;
+        //margin-right: 0;
+        .photo-gallery__item{
+            width: 100%;
+            height: auto;
+            // padding: 10px;
+            // border-radius: 10px;
+            &:hover{
+                box-shadow: 2px 2px 2px 1px rgba(22,23,95,0.25);
+                transform: scale(1.01);
+
+            }
+
+        }
+
+    }
 }
 
-.flex-box {
-  // display: flex;
-  // // flex-direction: row;
-  // flex-flow: column wrap;
-  // //flex-direction: column;
-  // justify-content: flex-start;
-  // align-content: flex-start;
-  // align-items: flex-start;
-////one idea
-  // display: -webkit-flex;
-  //  display: flex;
-  //  -webkit-align-items: center;
-  //  align-items: center;
-  //  -webkit-justify-content: center;
-  //  justify-content: center;
-  //  -webkit-flex-flow: column wrap;
-  //  flex-flow: column wrap;
-  //  -webkit-align-content: center;
-  //  align-content: center;
-  ////one idea
-    display: -webkit-flex;
-    display: flex;
-    // -webkit-align-items: space-between;
-    // align-items: space-between;
-    // -webkit-justify-content: center;
-    // justify-content: center;
-    /* You can set flex-wrap and flex-direction individually */
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    /* Or do it all in one line with flex flow */
-    -webkit-flex-flow: wrap;//other img layout turn off
-    flex-flow: wrap;//other img layout turn off
-    /* tweak the where items line up on the row */
-    /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
-    -webkit-align-content: space-around;
-    align-content: space-around;
-
-   //another one
-   // flex-direction: column;
-   // flex-wrap: wrap;
-   // justify-content: flex-start;
-   // align-items: stretch;
-   // align-content: stretch;
+.page-wrap{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -10;
 }
-
-.flex-box > img {
-  //object-fit: contain;
-  //flex-shrink: 0;
-  width: 50%; 
-  //height: 50%;
-  padding: 5px;
-  flex: 2;
-  // border: 1px solid black;
+.page-wrap__show{
+    // position: absolute;
+    // z-index: 5;
+    background-color: #FFF;
+    border: 1px solid rgba(25,0,0,0.2);
+    box-shadow: 0px 0px 8px 8px rgba(25, 0, 0, 0.2);
+    @include breakpoint($breakpoint-sm){
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+}
+.page-wrap__show--bkg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -5;
+    background-color: rgba(255,255,255,0.85);
+}
+.close{
+    position: absolute;
+    top: 120px;
+    right: 50%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 800;
+    z-index: 20;
+    text-decoration: none;
 }

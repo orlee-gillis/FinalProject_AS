@@ -53,11 +53,14 @@ html{
 }
 ul{
     list-style: none;
+    text-decoration: none;
 }
 .btn-default {
     font-size: 1.2em;
     font-weight: 300;
     font-family: 'Graphik', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 .navigation{
     font-size: 1.2em;
@@ -69,44 +72,28 @@ ul{
     }
 }
 
-// h1{
-// 	font-family: Lobster;
-// 	font-size: 80px; //80px/16 5em
-// 	text-shadow: 1px 2px 0px rgba(255,255,255,0.5);
-// 	color: white;
-// }
-// h2{
-// 	font-family: 'Holtwood One SC';
-// 	font-size: 40px; //40px/16 2.5em
-// 	color: white;
-// }
-// h3{
-// 	font-family: 'Holtwood One SC';
-// 	font-size: 30px; //30px/16 1.875em
-// 	color: white;	
-// }
-// .store-item__desc{
-// 	color: black;
-// }
-// .location{
-// 	font-size: 20px;
-// }
-
-//><><><><><>< #menu ><><><><><><><
-// .drink-name{
-// 	font-family: Helvetica, Arial, sans-serif;
-// 	font-size: 21px;//21px/16 1.3125em
-// }
-// .drink-name--description{ //small
-// 	font-size: 14px;//14px/16 0.875em
-// 	color: $description-font-color;
-// }
-//><><><><><>< footer ><><><><><><><
-// footer{
-// 	.logo{
-// 		font-family: Lobster;
-// 		font-size: 45px;
-// 		text-shadow: 1px 2px 0px rgba(255,255,255,0.5);
-// 	}
-// }
-
+h1{
+	font-family: 'Graphik';
+	font-size: 35px;; //80px/16 5em
+    font-weight: 800;
+	text-shadow: 1px 2px 0px rgba(255,255,255,0.5);
+	//color: #FFF;
+}
+h2{
+	font-family: 'Graphik';
+    font-weight: 700;
+	font-size: 30px; //40px/16 2.5em
+	//color: white;
+    margin-bottom:10px;
+}
+h3{
+	font-family: 'Graphik';
+    font-weight: 600;
+	font-size: 25px; //30px/16 1.875em
+	//color: white;	
+}
+p{
+    font-family: 'Graphik';
+    font-weight: 300;
+    font-size: 20px;
+}

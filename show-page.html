@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Melissa Sattler_WebDev4 Final Project</title>
+	<!-- Bootstrap -->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body class="page">
+
+	<header class="header"> 
+		<div class="header__logo">
+			<a href="index.html">
+				<img class="header__logo--sm" src="assets/img/as-logo-sm.png">
+				<img class="header__logo--lg" src="assets/img/as-logo.png">
+			</a>
+			<div class="cross-bkg"></div>	
+			<button class="cross">&#735;</button>
+		</div>
+		
+		<nav class="header navigation">
+			<ul class="menu-hamburger">
+				<li><a href="#menu" class="nav-item" id="menu">Menu</li>
+				<li><a href="shows.html" class="nav-item nav-item--highlight closed">Shows</a></li> 
+				<li><a href="http://www.adultswim.com/games/" class="nav-item closed" >Games</a></li>
+				<li><a href="http://www.adultswim.com/music/" class="nav-item closed">Music</a></li>
+				<li><a href="https://www.adultswim.com/login/?referrer=http%3A%2F%2Fwww.adultswim.com%2Fmusic%2F" class="nav-item-login closed">Login</a></li>
+			</ul>
+
+			<ul class="menu-md">
+				<li><a href="https://www.adultswim.com/login/?referrer=http%3A%2F%2Fwww.adultswim.com%2Fmusic%2F" class="nav-item nav-item-login visible-lg">Login</a></li>
+				<li><a href="http://www.adultswim.com/music/" class="nav-item visible-lg">Music</a></li>
+				<li><a href="http://www.adultswim.com/games/" class="nav-item visible-lg" >Games</a></li>
+				<li><a href="shows.html" class="nav-item nav-item--highlight visible-lg">Shows</a></li> 
+			</ul>
+		</nav><!-- END of .nav -->
+	</header><!--End of Navigation and Header-->
+
+	<div class="page-wrap">
+
+		<div class="hero"> <!-- hero is the large image on the top of the screen -->
+			<div class="carousel">
+
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="assets/img/shows-img-lg/SamuraiChamploo_Header.png" alt="">
+							<div class="carousel-caption">
+							
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="assets/img/shows-img-lg/onepunchman_Header.png" alt="">
+							<div class="carousel-caption">
+							
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="assets/img/shows-img-lg/SwordArtOnline_ShowHeader.png" alt="">
+							<div class="carousel-caption">
+							
+							</div>
+						</div>
+						
+					</div><!-- END of .carousel-inner -->
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<!-- <span class="sr-only">Previous</span> -->
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<!-- <span class="sr-only">Next</span> -->
+					</a>
+				</div><!-- END of #carousel-example-generic -->
+			
+			</div> <!-- END of .carousel -->
+		</div> <!-- END of .hero -->
+	
+
+		<div class="wrap">
+
+			<div class="sidebar">
+
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						SHOWS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A - Z
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<li><a href="show-page.html">THE BOONDOCKS</a></li>
+						<li><a href="show-page.html">THE BRAK SHOW</a></li>
+						<li><a href="show-page.html">COWBOY  BEBOP</a></li>
+						<li><a href="show-page.html">GHOST IN THE SHELL</a></li>
+						<li><a href="show-page.html">HARVEY BIRDMAN</a></li>
+						<li><a href="show-page.html">HOME MOVIES</a></li>
+						<li><a href="show-page.html">KILL LA KILL</a></li>
+						<li><a href="show-page.html">ONE PUNCH MAN!</a></li>
+						<li><a href="show-page.html">RICK AND MORTY</a></li>
+						<li><a href="show-page.html">SAMURAI CHAMPLOO</a></li>
+						<li><a href="show-page.html">SWORD ART ONLINE II</a></li>
+					</ul><!-- END of .dropdown-menu -->
+				</div><!-- END of .dropdown -->
+
+				<div class="dropdown--md">
+					<h2>SHOWS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A - Z</h2>
+					<ul class="dropdown-menu--md">
+						<li><a href="show-page.html">THE BOONDOCKS</a></li>
+						<li><a href="show-page.html">THE BRAK SHOW</a></li>
+						<li><a href="show-page.html">COWBOY  BEBOP</a></li>
+						<li><a href="show-page.html">GHOST IN THE SHELL</a></li>
+						<li><a href="show-page.html">HARVEY BIRDMAN</a></li>
+						<li><a href="show-page.html">HOME MOVIES</a></li>
+						<li><a href="show-page.html">KILL LA KILL</a></li>
+						<li><a href="show-page.html">ONE PUNCH MAN!</a></li>
+						<li><a href="show-page.html">RICK AND MORTY</a></li>
+						<li><a href="show-page.html">SAMURAI CHAMPLOO</a></li>
+						<li><a href="show-page.html">SWORD ART ONLINE II</a></li>
+					</ul><!-- END of .dropdown-menu -->
+				</div><!-- END of .dropdown--md -->
+
+			</div> <!-- END of .sidebar-->
+
+			<div class="content">
+				<div class="photo-gallery">
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/the-boondocks.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/the-brak-show.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/cowboy-beebop.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/ghost-in-the-shell.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/harvey-birdman-attorney.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/home-movies.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/kill-la-kill.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">	
+						<img class="photo-gallery__item" src="assets/img/shows-img/one-punch-man.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/rick-and-morty.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/samuri-champloo.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/sword-art-online-II.gif">
+					</a>
+				</div> <!-- END of .photo-gallery-->
+			</div> <!-- END of .content -->
+		</div> <!-- END of .wrap-->
+
+	</div> <!-- END of .page-wrap-->
+
+	<div class="page-wrap__show--bkg">
+	</div>
+	
+
+	<div class="page-wrap__show">
+		<a href="shows.html" class="close">X</a>
+
+		<div class="hero"> <!-- hero is the large image on the top of the screen -->
+			<div class="banner"></div>
+		</div> <!-- END of .hero -->
+		
+
+		<div class="wrap">
+
+			<div class="sidebar--details">
+				<div class="heading">
+					The Boondocks
+					<span>Season 1</span>
+				</div>
+
+				<div class="details">
+					<h1 class="details__episode">Episode 1</h1>
+					<p class="details__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<div class="details">
+					<h1 class="details__episode">Episode 2</h1>
+					<p class="details__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<div class="details">
+					<h1 class="details__episode">Episode 3</h1>
+					<p class="details__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<div class="details">
+					<h1 class="details__episode">Episode 4</h1>
+					<p class="details__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+
+				
+			</div> <!-- END of .sidebar-->
+
+			<div class="content--details">
+				<h5 class="more-like-so">more like so</h5>
+				<div class="photo-gallery photo-gallery--more-like-so">
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/the-boondocks.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/the-brak-show.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/cowboy-beebop.gif">
+					</a>
+					<a class="photo-gallery__link" href="show-page.html">
+						<img class="photo-gallery__item" src="assets/img/shows-img/ghost-in-the-shell.gif">
+					</a>
+				</div> <!-- END of .flex-box-->
+			</div> <!-- END of .content -->
+			
+		</div> <!-- END of .wrap-->
+	</div> <!-- END of .page-wrap__show boondoocks-->
+
+
+	<footer class="footer">
+		<div class="footer__social">
+			<a href="https://www.facebook.com/adultswim">
+				<img class="social__link" src="assets/img/facebook.png">
+			</a>
+			<a href="https://twitter.com/adultswim?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+				<img class="social__link" src="assets/img/twitter.png">
+			</a>
+		</div>
+		<div class="footer__logo">
+			<img class="footer__logo--sm" src="assets/img/as-logo-sm.png">
+			.com
+		</div>
+	</footer> <!-- END of .footer -->
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+	<script src="assets/js/script.js" type="text/javascript"></script>
+</body> <!-- END of .page and body -->
+
+</html>

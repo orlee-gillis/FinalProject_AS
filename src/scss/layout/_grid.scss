@@ -11,20 +11,17 @@ $susy: (
     columns: 12,
     gutters: 1,
     gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
-    global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
-    // use-custom: (
-    //     background-image: false,
-    //     background-options: false,
-    //     box-sizing: true,
-    //     clearfix: true,
-    //     rem: true,
-    // )
 );
 ////  GRID
 
 .page {
     @include full;
     margin-top: 0;
+    margin-bottom: 0;
+    background-image: url(../img/bang-bkg-opacity.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
 }
 
 .header__logo {
@@ -46,18 +43,26 @@ $susy: (
 }
 
 
-
 .wrap{
     @include container;
 }
 .content {
+    // @include bp-sm{
+    //      @include span(12);
+    // }
     @include bp-md{
         @include span(8);
     }
+}
+.content--details{
+    @include span(12);
 }
 .sidebar {
     @include bp-md{
         @include span(4 last); 
     }
+}
+.sidebar--details{
+    @include span(12);
 }
 
