@@ -1,3 +1,13 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
 $primary-gold: #ffb302;
 $darker-gold: #ff9d01;
 $main-font-color: #ffffff;

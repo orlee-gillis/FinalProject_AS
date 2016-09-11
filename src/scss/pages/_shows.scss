@@ -1,12 +1,18 @@
-.content{
-	.show{
-		.show__header{
-			float: left;
-			width: 100%;
-			height: auto;
-		}
-	}
-}
+
+// .content{
+// 	.show{
+// 		.show__header-container{
+// 			width: 100%;
+// 			background-color: #131e28;
+// 			.show__header{
+// 				float: left;
+// 				width: 100%;
+// 				height: auto;
+// 				max-width: 534px;
+// 			}
+// 		}
+// 	}
+// }
 .image-content{
 	@include span(6);
 	.show__title{

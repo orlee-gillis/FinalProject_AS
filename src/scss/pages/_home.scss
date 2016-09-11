@@ -1,12 +1,4 @@
-*{
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box; 
-}
-.clearfix:after{
-	content: "";
-	display: table;
-	clear: both;
-}
+
 // p{
 // 	margin: 0;
 // }
@@ -18,4 +10,13 @@
 //     transition: all 1s ease-in-out;
 //     transition-duration: 1s;
 // }
-//<><><><><><><><><> .hero <><><><><><><><><>
+//<><><><><><><><><> .sidebar <><><><><><><><><>
+.sidebar{
+	.show{
+		.show__header{
+			float: left;
+			width: 100%;
+			height: auto;
+		}
+	}
+}
