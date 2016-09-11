@@ -20,3 +20,36 @@
 		}
 	}
 }
+
+// .games =========== home =======
+.games__title{
+	float: left;
+	// top: 0;
+	// left:0;
+	background-color: $highlight;
+	width: 80px;
+	height: 600px;
+	.games__title-item{
+		width: 80px;
+	}
+}
+.games-wrapper{
+	position: relative;
+	//width: 100%;
+	.games-wrapper__item{
+		//margin: 30px;
+		
+		.games__item{
+			position: absolute;
+			left: 0;
+			//margin: 2px 0;
+			width: 100%;
+			height: auto;
+			z-index: -1;
+		}
+		.btn-position{
+			//position: absolute;
+			z-index: 1;
+		}
+	}
+}
