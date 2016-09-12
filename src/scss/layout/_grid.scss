@@ -5,11 +5,11 @@ $susy: (
     output: float, // float | isolate
     math: fluid, // fluid | static (requires column-width)
     column-width: 50px, // false | value
-    container: auto, // length or % | auto
+    container: 1200px, // length or % | auto
     container-position: center, // left | center | right | <length> [*2] (grid padding)
     last-flow: to,
     columns: 12,
-    gutters: 1,
+    gutters: 1/12,
     gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
 );
 ////  GRID
@@ -38,6 +38,26 @@ $susy: (
         width: 278px;
     }
 }
+.sidebar-home{
+    @include container;
+     @include bp-md{
+        @include span(3 last); 
+    }
+}
+.content-home{
+    @include bp-md{
+        @include span(9);
+    }
+}
+.content-home.specials{
+    @include container;
+    @include gallery(1 of 4);
+    // @include bp-sm{
+    //     @include gallery(2 of 4);
+    // }
+}
+
+
 .hero{
     @include full;
 }

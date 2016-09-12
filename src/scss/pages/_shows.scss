@@ -13,36 +13,3 @@
 // 		}
 // 	}
 // }
-.image-content{
-	@include span(6);
-	.show__title{
-		padding: 0;
-		margin: 0;
-		margin-left: 10px;
-	}
-}
-.image-sidebar{
-	@include span(6 last);
-}
-.image-item{
-	float: left;
-	width: 100%;
-	height: auto;
-	display: inline;
-}
-.image-item__vertical{
-	display: block;
-	float: left;
-	width: 100%;
-	@include bp-sm{
-		display: none;
-	}
-}
-.image-item__horizontal{
-	display: none;
-	float: left;
-	width: 100%;
-	@include bp-sm{
-		display: block;
-	}
-}

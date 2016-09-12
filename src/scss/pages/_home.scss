@@ -1,17 +1,11 @@
-
-// p{
-// 	margin: 0;
-// }
-// body{
-// 	background: url(../img/bg-dark.jpg);
-// 	background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     transition: all 1s ease-in-out;
-//     transition-duration: 1s;
-// }
 //<><><><><><><><><> .sidebar <><><><><><><><><>
-.sidebar{
+.sidebar-home{
+	float: right;
+	margin-top:20px;
+	@include container;
+	//padding: 10px;
+    background-color: #FFF;
+    border: 5px solid $highlight;
 	.show{
 		.show__header{
 			float: left;
@@ -20,28 +14,46 @@
 		}
 	}
 }
+.content-home{
+	float: left;
+	margin-top:20px;
+	padding-bottom: 20px;
+	.wrapper{
+		float: left;
+		width: 100%;
+		height: auto;
+	}
+}
 
 // .games =========== home =======
 .games__title{
-	float: left;
-	// top: 0;
-	// left:0;
+	@include container;
+	//position: absolute;
+	// top: 0;//
+//	right:0;
 	background-color: $highlight;
-	width: 80px;
-	height: 600px;
+	width: 100%;
+	height: 85px;
+	z-index: 0;
 	.games__title-item{
+		position: absolute;
+		//z-index: 1;
 		width: 80px;
 	}
 }
-.games-wrapper{
-	position: relative;
-	//width: 100%;
-	.games-wrapper__item{
-		//margin: 30px;
-		
+.wrapper.games{
+	// position: relative;
+	// width: 100%;
+	
+	border-bottom: 25px solid $highlight; //remove later
+	border-left: 5px solid $highlight; //remove later
+	.wrapper__item.games{
+		@include breakpoint($breakpoint-sm){
+			@include gallery(2 of 4);
+		}
 		.games__item{
-			position: absolute;
-			left: 0;
+			float: left;
+			//left: 0;
 			//margin: 2px 0;
 			width: 100%;
 			height: auto;
@@ -49,7 +61,81 @@
 		}
 		.btn-position{
 			//position: absolute;
+			margin-top: -74px;
 			z-index: 1;
+			//float: left;
+			transform: translate(50%);
 		}
 	}
+}
+// .specials ================ .home
+
+.wrapper__item.specials{
+	@include breakpoint($breakpoint-sm){
+		@include gallery(2 of 4);
+	}
+	@include breakpoint($breakpoint-md){
+		@include gallery(1 of 4);
+	}
+	
+	.specials__item{
+		float: left;
+		//left: 0;
+		//margin: 2px 0;
+		padding: 20px 20px;
+		width: 100%;
+		height: auto;
+		z-index: -1;
+	}
+
+}
+.content-home.specials{
+	width: 100%;
+    //padding: 0 20px;
+    .specials__title{
+		margin-left: 20px;
+	}
+}
+.wrapper.specials{
+	background-color: $dark-highlight;
+}
+
+// .sidebar ========================
+.image-content{
+	@include span(6);
+	.show__title{
+		padding: 0;
+		margin: 10px 0 0 10px;
+	}
+	.show__desc{
+		margin-left: 10px;
+	}
+}
+.image-sidebar{
+	@include span(6 last);
+}
+.image-item{
+	float: left;
+	width: 100%;
+	height: auto;
+	display: inline;
+	//margin-right: 10px;
+	margin: 13px -18px;
+}
+.image-item__vertical{
+	display: block;
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+	// @include bp-sm{
+	// 	display: none;
+	// }
+}
+.image-item__horizontal{
+	display: none;
+	float: left;
+	width: 100%;
+	// @include bp-sm{
+	// 	display: block;
+	// }
 }

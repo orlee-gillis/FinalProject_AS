@@ -12,7 +12,7 @@
     	max-height: 420px;
     	padding: 43% 0 0;
     	position: relative;
-    	text-align: center;
+    	text-align: right;
     	width: 100%;
     	height: auto;
     	transition: opacity .3s ease-in-out;
@@ -38,5 +38,8 @@
 		// 	// background-repeat: no-repeat;
 		// 	// //@include full;
 		// }
+		.banner-rating__container{
+			margin-right: 5px;
+		}
 	}
 }
