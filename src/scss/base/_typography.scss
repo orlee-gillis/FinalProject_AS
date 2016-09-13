@@ -76,7 +76,7 @@ h1{
 	font-family: 'Graphik';
 	font-size: 35px;; //80px/16 5em
     font-weight: 800;
-	text-shadow: 1px 2px 0px rgba(255,255,255,0.5);
+	text-shadow: 1px 2px 0px rgba(153,153,153,0.5);
     padding: 0;
     margin: 0;
 	//color: #FFF;
@@ -98,4 +98,8 @@ p{
     font-family: 'Graphik';
     font-weight: 300;
     font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: #000;
 }

@@ -19,3 +19,14 @@ $( ".cross" ).click(function() {
 		$('.closed').hide();
 	});
 });
+
+
+// $(".specials__item").hover(function() {
+// 	$(".specials__desc").addClass("opaque");
+// 	console.log("entered");
+// 	 Stuff to do when the mouse enters the element 
+// }, function() {
+// 	$(".specials__desc").removeClass("opaque");
+// 	console.log("exited");
+// 	/* Stuff to do when the mouse leaves the element */
+// });

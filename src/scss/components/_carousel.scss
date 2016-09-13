@@ -2,6 +2,7 @@
 
 .carousel{
     margin-bottom: 20px;
+    background-color: #f25cd6;
 }
 .carousel__item{    
      height: auto;
@@ -86,4 +87,7 @@
     }
 }
 //NEEDS BEM ^
-
+.heading{
+    padding-left: 20px;
+    margin: 4px;
+}

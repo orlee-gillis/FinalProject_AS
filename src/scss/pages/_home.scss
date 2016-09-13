@@ -71,24 +71,60 @@
 // .specials ================ .home
 
 .wrapper__item.specials{
+	//position: relative;
+	padding: 20px;
 	@include breakpoint($breakpoint-sm){
 		@include gallery(2 of 4);
 	}
 	@include breakpoint($breakpoint-md){
+		//padding: 0;
 		@include gallery(1 of 4);
 	}
-	
 	.specials__item{
+		padding-bottom: 20px;
 		float: left;
-		//left: 0;
-		//margin: 2px 0;
-		padding: 20px 20px;
 		width: 100%;
 		height: auto;
-		z-index: -1;
+		position: relative;
+		//z-index: ;
+		@include bp-md{
+			padding-bottom: 0px;
+		}
+		&:hover{
+ 			transition-duration: 0.5s;
+			background-color: $dark-highlight;
+			opacity: 0.15;
+			border: 5px solid #000;
+		}
+	}	
+	.specials__desc{
+	    float: left;
+	    width: 100%;
+	    color: white;
+	    font-weight: 600;
+	    line-height: 1.3em;
+	    margin-top: -188px;
+	    padding: 0 25px;
+	    font-size: 23px;
+	    color: #000;
+	    text-shadow: 1px 2px 0px rgba(255,255,255,0.5);
+	    //border-top: 15px solid #000;
+	    //opacity: 0;
+	 //   	&:hover{
+	 //   		transition-duration: 0.5s;
+		// 	background-color: $highlight;
+		// 	opacity: 0.35;
+		// }
+		
 	}
+	
 
 }
+
+.opaque{
+	opacity: 1;
+}
+
 .content-home.specials{
 	width: 100%;
     //padding: 0 20px;
@@ -98,6 +134,10 @@
 }
 .wrapper.specials{
 	background-color: $dark-highlight;
+	padding: 20px;
+	@include bp-sm{
+		padding: 0;
+	}
 }
 
 // .sidebar ========================
