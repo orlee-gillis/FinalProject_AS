@@ -12,52 +12,18 @@ $susy: (
     gutters: 1/12,
     gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
 );
+
 ////  GRID
 
 .page {
     @include full;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-image: url(../img/bang-bkg-opacity.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition-duration: 0.3s;
 }
-
 .header__logo {
     @include container;
 }
 .navigation {
     @include container;
 }
-.sidebar{
-    @include container;
-   // padding: 9px 44px;
-    width: 312px;
-    .dropdown{
-        width: 278px;
-    }
-}
-.sidebar-home{
-    @include container;
-     @include bp-md{
-        @include span(3 last); 
-    }
-}
-.content-home{
-    @include bp-md{
-        @include span(9);
-    }
-}
-.content-home.specials{
-    @include container;
-    @include gallery(1 of 4);
-    // @include bp-sm{
-    //     @include gallery(2 of 4);
-    // }
-}
-
-
 .hero{
     @include full;
 }
@@ -70,16 +36,47 @@ $susy: (
         @include span(8);
     }
 }
-.content--details{
-    @include span(12);
-}
-
 .sidebar {
+    @include container;
     @include bp-md{
         @include span(4 last); 
     }
 }
+.content--details{
+    @include span(12);
+}
+
 .sidebar--details{
     @include span(12);
+}
+
+// index.html ================ .home
+// .show =====
+.sidebar-home{
+    @include container;
+     @include bp-md{
+        @include span(3 last); 
+    }
+}
+// .games =====
+.content-home{
+    @include bp-md{
+        @include span(9);
+    }
+}
+// .specials=====
+.content-home--sub{
+    @include container;
+    @include gallery(1 of 4);
+}
+
+.wrapper__item.specials{
+    @include breakpoint($breakpoint-sm){
+        @include gallery(2 of 4);
+    }
+    @include breakpoint($breakpoint-md){
+        //padding: 0;
+        @include gallery(1 of 4);
+    }
 }
 

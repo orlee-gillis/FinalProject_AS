@@ -1,9 +1,24 @@
 .page{
     position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: url(../img/bang-bkg-opacity.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
 }
-.more-like-so{
-    text-align: center;
-    border-bottom: 3px solid black;
+.page-wrap{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+}
+.sidebar{  
+   // padding: 9px 44px;
+    width: 312px;
+    .dropdown{
+        width: 278px;
+    }
 }
 .photo-gallery {
     //height: 200px;
@@ -48,9 +63,4 @@
     }
 }
 
-.page-wrap{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    z-index: -10;
-}
+

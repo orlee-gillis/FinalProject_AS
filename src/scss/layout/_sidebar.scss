@@ -1,3 +1,60 @@
+//<><><><><><><><><> .sidebar .home <><><><><><><><><>
+.sidebar-home{
+    float: right;
+    margin-top:20px;
+    @include container;
+    //padding: 10px;
+    background-color: #FFF;
+    border: 5px solid $highlight;
+    .show{
+        .show__header{
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+// .sidebar ==== .home .show ====================
+.image-sidebar{
+    @include span(6 last);
+}
+.image-item{
+    float: left;
+    width: 100%;
+    height: auto;
+    display: inline;
+    //margin-right: 10px;
+    margin: 13px -18px;
+}
+.image-item__vertical{
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    // @include bp-sm{
+    //  display: none;
+    // }
+}
+.image-item__horizontal{
+    display: none;
+    float: left;
+    width: 100%;
+    // @include bp-sm{
+    //  display: block;
+    // }
+}
+.image-content{
+    @include span(6);
+    .show__title{
+        padding: 0;
+        margin: 10px 0 0 10px;
+    }
+    .show__desc{
+        margin-left: 10px;
+    }
+}
+
+// ====== sidebar--shows
 .dropdown--md{
     display: none;
     text-align: right;
@@ -52,3 +109,4 @@
             color: #fff;
         }
 }
+

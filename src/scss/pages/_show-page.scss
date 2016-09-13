@@ -1,3 +1,7 @@
+.heading{
+    padding-left: 20px;
+    margin: 4px;
+}
 .page-wrap__show{
     // position: absolute;
     // z-index: 5;
@@ -35,4 +39,7 @@
         background-color: #333;
     }
 }
-
+.recommendations{
+    text-align: center;
+    border-bottom: 3px solid black;
+}
