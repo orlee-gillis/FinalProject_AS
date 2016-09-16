@@ -12,23 +12,16 @@
 // .games =========== home =======
 .games__title{
 	@include container;
-	//position: absolute;
-	// top: 0;//
-//	right:0;
 	background-color: $highlight;
 	width: 100%;
 	height: 85px;
 	z-index: 0;
 	.games__title-item{
 		position: absolute;
-		//z-index: 1;
 		width: 80px;
 	}
 }
 .wrapper.games{
-	// position: relative;
-	// width: 100%;
-	
 	border-bottom: 25px solid $highlight; //remove later
 	border-left: 5px solid $highlight; //remove later
 	.wrapper__item.games{
@@ -37,17 +30,13 @@
 		}
 		.games__item{
 			float: left;
-			//left: 0;
-			//margin: 2px 0;
 			width: 100%;
 			height: auto;
 			z-index: -1;
 		}
 		.btn-position{
-			//position: absolute;
 			margin-top: -74px;
 			z-index: 1;
-			//float: left;
 			transform: translate(50%);
 		}
 	}
@@ -57,7 +46,6 @@
 // .specials ================ .home
 
 .wrapper__item.specials{
-	//position: relative;
 	padding: 20px;
 	.specials__item{
 		padding-bottom: 20px;
@@ -65,7 +53,6 @@
 		width: 100%;
 		height: auto;
 		position: relative;
-		//z-index: ;
 		@include bp-md{
 			padding-bottom: 0px;
 		}

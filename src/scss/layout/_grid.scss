@@ -43,7 +43,7 @@ $susy: (
     }
 }
 // .show ===
-.content--details{
+.content--details{  
     @include span(12);
 }
 
@@ -76,7 +76,6 @@ $susy: (
         @include gallery(2 of 4);
     }
     @include breakpoint($breakpoint-md){
-        //padding: 0;
         @include gallery(1 of 4);
     }
 }

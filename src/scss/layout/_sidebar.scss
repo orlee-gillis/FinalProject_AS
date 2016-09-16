@@ -1,9 +1,8 @@
 //<><><><><><><><><> .sidebar .home <><><><><><><><><>
 .sidebar-home{
     float: right;
-    margin-top:20px;
+    margin-top: 20px;
     @include container;
-    //padding: 10px;
     background-color: #FFF;
     border: 5px solid $highlight;
     .show{
@@ -17,31 +16,62 @@
 // .sidebar ==== .home .show ====================
 .image-sidebar{
     @include span(6 last);
+    @include bp-sm{
+        @include span(12);
+    }
+    @include bp-md{
+        @include span(6 last);
+    }
 }
+
 .image-item{
     float: left;
     width: 100%;
     height: auto;
     display: inline;
     //margin-right: 10px;
-    margin: 13px -18px;
+    margin: 5px -18px;
 }
+.gallery{
+    @include clearfix; 
+    .gallery__link{
+
+        @include bp-sm{
+            margin: 0 6%;
+            @include span(3 of 12);
+
+        }
+        @include bp-md{
+            @include span(12);
+        }
+    }
+}
+
+
+
 .image-item__vertical{
     display: block;
     float: left;
     width: 100%;
-    margin-top: 30px;
-    // @include bp-sm{
-    //  display: none;
-    // }
+    margin-top: 51px;
+    //margin-bottom: 5px;
+    @include bp-sm{
+        display: none;
+    }
+    @include bp-md{
+        display: block;
+    }
 }
 .image-item__horizontal{
     display: none;
     float: left;
     width: 100%;
-    // @include bp-sm{
-    //  display: block;
-    // }
+    @include bp-sm{
+        display: block;
+    }
+    @include bp-md{
+        display: none;
+    }
 }
 .image-content{
     @include span(6);
@@ -51,6 +81,12 @@
     }
     .show__desc{
         margin-left: 10px;
+    }
+    @include bp-sm{
+        @include span(12);
+    }
+    @include bp-md{
+        @include span(6);
     }
 }
 
@@ -105,7 +141,6 @@
     }
     &:hover{
             background-color: #333;
-            //padding: 10px;
             color: #fff;
         }
 }

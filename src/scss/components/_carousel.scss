@@ -1,56 +1,51 @@
-//@import "helpers/variables";
+@import "helpers/mixins";
 
 .carousel{
     margin-bottom: 20px;
-    background-color: #f25cd6;
+    max-height: 400px;
+    background-color: rgba(242,92,214, 0.5);
 }
+.carousel.home{
+    overflow: hidden;
+}
+
 .carousel__item{    
-     height: auto;
-     //background-color: $carousel-bkg-color;
-    // background: $carousel-bkg-color url(../img/exterior.jpg) center no-repeat;
+    height: auto;
      border-top: 1px solid $carousel-border-top;
      border-bottom: 1px solid $carousel-border-btm;
-     // @include bp-sm {
-     //   background: $carousel-bkg-color url(../img/coffee-1.jpg) center no-repeat;
-     // }
 }
 
 .carousel-inner{
-	//border-top: 1px solid $carousel-border-top;
- 	//border-bottom: 1px solid $carousel-border-btm;
- 	//background-color: $carousel-bkg-color;
 	.item{
-        //display: block;
-		height: auto;
-        // margin-right: auto;
-        // margin-right: auto;
-        //position: absolute;
-        // top: 0;
-		// left: 50%;
-		// transform: translateX(-50%);
+        height: 400px;
         img{
+            width: auto;
             margin-left: auto;
             margin-right: auto;
+            @include bp-sm{
+                max-height: 400px;
+            }
         }
         .jumbotron{
-            max-height: 400px;
-            //height: 400px;
+            height: 400px;
             background: url(../img/Adult-swim-logo-transparent.png);
             background-size: 4%;
             background-repeat: repeat;
-            //opacity: 0.2
+        
             #jumbotron__item{
                 position: absolute;
                 top: 0;
                 right: 0;
-                //width: 30%;
-                max-height: 400px;
+                max-width: 400px;
                 z-index: -1;
                 opacity: 0.25;
+                @include breakpoint($breakpoint-sm){
+                    max-width: 800px;
+                }
             }
             .container{
                 padding: 0 10%;
-                // color: $highlight;
+                max-height: 400px;
             }
             
         }
@@ -58,32 +53,31 @@
 
 }
 
+.item__img.game{
+    background: url(../img/carousel-home/RUA2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .carousel-indicators {
     bottom: -15px;
 }
 
-//NEEDS BEM ---index.html
-.carousel{
-    max-height: 400px;
-}
-.jumbotron{
-    .container{
-        max-height: 400px;
-    }
-}
-.item{
-    img{
-        max-height: 400px;
-    }
-}
-.item-container{
-    width: 100%;
-    img{
-        float: left;
-        width: 40%;
-        max-height: 400px;
 
-        height: auto;
+.item-container{
+
+    .visible-xs{
+        display: block;
+        max-height: 400px;
+        @include bp-sm{
+            display: none;
+        }
+    }
+    .hidden-xs{
+        display: none;
+        @include bp-sm{
+            display: block;
+        }
     }
 }
-//NEEDS BEM ^
+
